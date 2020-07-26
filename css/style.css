@@ -1,0 +1,152 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Share+Tech+Mono&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom, #6097d9, #e9f5ff);
+}
+
+.header{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 21px;
+}
+
+.main{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.headerName{
+    color: #ffe000;
+    font-size: 125px;
+    text-transform: lowercase;
+    text-shadow: #ea0000 1.5px 1px 0.5px;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: -0.5px;
+}
+
+.enterName{
+    color: #ffe000;
+    font-size: 35px;
+    text-shadow: #ea0000 1.5px 1px 0.5px;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: -0.5px;
+    margin-bottom: 50px;
+}
+
+.result{
+    color: #ffe000;
+    font-size: 27px;
+    text-shadow: #ea0000 1.5px 1px 0.5px;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: -0.5px;
+    margin-bottom: 100px;
+}
+p {
+    margin: 5px auto;
+}
+button{
+    color: white;
+    text-transform: lowercase;
+    font-size: 21px;
+    text-shadow: black 1.5px 1px 0.5px;
+    background: transparent;
+    border: 0;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: -0.5px;
+    outline: none; /* Для синей ободки */
+    margin: 18px 0 45px 0;
+}
+
+button:hover{
+    text-shadow: black 3.5px 3px 0.5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"]{
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 40px;
+
+}
+
+
+@keyframes loading1 {
+    from{
+        left: -30px;
+    }
+    to {
+        left: 30px;
+    }
+}
+
+@keyframes loading2 {
+    from{
+        left: -30px;
+    }
+    to {
+        left: 30px;
+    }
+}
+
+@keyframes loading3 {
+    from{
+        left: -30px;
+    }
+    to {
+        left: 30px;
+    }
+}
+
+.blockLine{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.line1{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #ffe000;
+    box-shadow: 1px 1px 0.1px #ea0000;
+    animation-name: loading1;
+    animation-duration: 2s;
+    animation-timing-function: steps(3);
+    animation-iteration-count: infinite;
+    margin: 0 20px;
+}
+
+.line1:hover, .line2:hover, .line3:hover{
+    transform: scale(2,2);
+}
+
+.line2{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #ffe000;
+    box-shadow: 1px 1px 0.1px #ea0000;
+    animation: loading2 2s steps(3) infinite;
+    margin: 0 20px;
+}
+
+.line3{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #ffe000;
+    box-shadow: 1px 1px 0.1px #ea0000;
+    animation: loading3 2s steps(3) infinite;
+    margin: 0 20px;
+}
